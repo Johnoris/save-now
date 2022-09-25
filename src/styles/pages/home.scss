@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    max-width: 1440px;
+    margin: 0 auto;
+    .top-section{
+        margin-bottom: -80px;
+        padding-top: 118px;
+        .top-section_child{
+            display: flex;
+            padding: 0 100px;
+            gap: 29px;
+            .text-wrapper{
+                h1{
+                    font-family: Nunito;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 72px;
+                    text-align: left;
+                    color: #362E47;
+                    a{
+                        color: #183F8B;
+                    }
+                }
+                h4{
+                    font-family: Nunito;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #362E47;                      
+                }
+                button{
+                    height: 44px;
+                    width: 160px;
+                    border-radius: 8px;
+                    background-color: #183F8B;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    color: #ffffff;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin-top: 40px;
+                }
+            }
+        }
+        .about{
+            display: flex;
+            gap: 16px;
+            height: 152px;
+            width: 993px;
+            border-radius: 8px;
+            padding: 43px 93px 49px 67px;
+            box-shadow: 0px 4px 40px 0px #7F56D91A;
+            margin: 0 auto;
+            margin-top: 52px;
+            background-color: #ffffff;
+            h3{
+                font-family: Nunito;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 60px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #4E4E4E;
+            }
+            h3:not(:first-child){
+                border-left: 1px solid #4E4E4E;
+                padding-left: 40px;
+            }
+        }
+    }
+    .invest{
+        background-color: #FBFCFF;
+        background-image: url('../../assets/invest-bg.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        display: flex;
+        padding: 203px 132px 0 104px;
+        z-index: 2;
+        margin-bottom: 100px;
+        h3{
+            font-family: Nunito;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 48px;
+            text-align: left;
+        }
+        .invest-card{
+            padding: 32px;
+            .card-img{
+                margin-bottom: 16px;
+            }
+            h4{
+                font-family: Nunito;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #362E47;
+                margin-bottom: 11px;
+            }
+            p{
+                font-family: Nunito;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: left;
+                color: #4E4E4E;
+                margin-bottom: 13px;
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                max-width: fit-content;
+                max-height: fit-content;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-family: Nunito;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+                color: #183F8B;
+            }
+        }
+    }
+    .about-us{
+        background-color: #FBFCFF;
+        padding: 100px;
+        display: flex;
+        margin-bottom: 100px;
+        h2{
+            font-family: Nunito;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 60px;
+            text-align: left;
+            color: #362E47;
+            max-width: 413px;
+        }
+        .about-card-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .invest-card{
+            background-color: #ffffff;
+            height: 270px;
+            width: 365px;
+            padding: 32px;
+            img{
+                margin-bottom: 16px;
+            }
+            h4{
+                font-family: Nunito;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 48px;
+                text-align: left;
+                color: #362E47;
+                margin-bottom: 11px;
+            }
+            p{
+                font-family: Nunito;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27px;
+                text-align: left;
+                color: #4E4E4E;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .start{
+        padding: 100px;
+        background-color: #FBFCFF;
+        margin-bottom: 100px;
+        .how-to{
+            display: flex;
+            gap: 80px;
+            margin-bottom: 208px;
+            h3{
+                font-family: Nunito;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 60px;
+                text-align: left;
+                color: #362E47;
+                margin-bottom: 32px;
+            }
+            .steps{
+                display: flex;
+                gap: 40px;
+                h5{
+                    font-family: Nunito;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    text-align: left;
+                    color: #362E47;
+                }
+                p{
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: left;
+                    color: #4E4E4E;
+                    margin-top: 8px;
+                    max-width: 336px;
+                }
+                .no{
+                    background-color: #183F8B;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h4{
+                        font-family: Nunito;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #ffffff;                         
+                    }
+                }
+            }
+        }
+        .investment-plan{
+            display: flex;
+            gap: 56px;
+            h3{
+                font-family: Nunito;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 60px;
+                text-align: left;
+                color: #362E47;
+                margin-bottom: 28px;
+            }
+            p{
+                font-family: Nunito;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 45px;
+                text-align: left;
+                color: #4E4E4E;
+                margin-bottom: 28px;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                height: 44px;
+                width: 160px;
+                border-radius: 8px;
+                background-color: #183F8B;
+                font-family: Nunito;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #ffffff;
+            }
+        }
+    }
+    .download{
+        background-color: #183F8B;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        margin-bottom: 100px;
+        h2{
+            font-family: Nunito;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            text-align: center;
+            color: #ffffff;
+            max-width: 929px;
+        }
+        .download-links{
+            margin-top: 48px;
+            display: flex;
+            gap: 49px;
+        }
+    }
+    .customers{
+        padding-top: 100px;
+        margin-bottom: 100px;
+        h3{
+            font-family: Nunito;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 60px;
+            text-align: center;
+            color: #362E47;
+        }
+        .current-view{
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 64px;
+            div{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background-color: #D9D9D9;
+            }
+        }
+        .customer-card-wrapper{
+            display: flex;
+            gap: 87px;
+            justify-content: center;
+            margin-top: 40px;
+            .customer-card{
+                height: 269px;
+                width: 550px;
+                border-radius: 8px;
+                padding: 32px;
+                box-shadow: 0px 4px 40px 0px #7F56D91C;
+                h4{
+                    font-family: Nunito;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #362E47;
+                }
+                h5{
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 27px;
+                    text-align: left;
+                    color: #898787;
+                }
+                p{
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: left;
+                    color: #362E47;
+                }
+                .customer-card-top{
+                    display: flex;
+                    gap: 41px;
+                    align-items: center;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
