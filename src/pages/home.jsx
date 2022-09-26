@@ -15,9 +15,7 @@ const Home = () => {
                         <img src={require('../assets/next-icon.png')} alt=""/>
                         </button>
                     </div>
-                    <div>
-                    <img src={require('../assets/top-section-img.png')} alt=""/>
-                    </div>
+                    <img  src={require('../assets/top-section-img.png')} alt=""/>
                 </div>
                 <div className="about">
                     <h3>100k+ Users</h3>
@@ -25,25 +23,27 @@ const Home = () => {
                     <h3>5k+ partners</h3>
                 </div>
             </section>
-            <section className="invest">
+             <section className="invest">
                 <h3>Save, Invest now and Enjoy later!</h3>
-                <div className="invest-card">
-                    <img className="card-img" src={require('../assets/savings-icon.png')} alt=""/>
-                    <h4>Savings</h4>
-                    <p>Save with us today by choosing the savings plan that suits you</p>
-                    <button>
-                        Learn more
-                        <img src={require('../assets/more-icon.png')} alt=""/>  
-                    </button>
-                </div>
-                <div className="invest-card">
-                    <img className="card-img" src={require('../assets/invest-icon.png')} alt=""/>
-                    <h4>Investments</h4>
-                    <p>Put your money to work, Invest now and enjoy later.</p>
-                    <button>
-                        Learn more
-                        <img src={require('../assets/more-icon.png')} alt=""/>  
-                    </button>
+                <div className="invest-card-wrapper">
+                    <div className="invest-card">
+                        <img className="card-img" src={require('../assets/savings-icon.png')} alt=""/>
+                        <h4>Savings</h4>
+                        <p>Save with us today by choosing the savings plan that suits you</p>
+                        <button>
+                            Learn more
+                            <img src={require('../assets/more-icon.png')} alt=""/>  
+                        </button>
+                    </div>
+                    <div className="invest-card">
+                        <img className="card-img" src={require('../assets/invest-icon.png')} alt=""/>
+                        <h4>Investments</h4>
+                        <p>Put your money to work, Invest now and enjoy later.</p>
+                        <button>
+                            Learn more
+                            <img src={require('../assets/more-icon.png')} alt=""/>  
+                        </button>
+                    </div>
                 </div>
             </section>
             <section className="about-us">
@@ -57,7 +57,9 @@ const Home = () => {
             </section>
             <section className="start">
                 <div className="how-to">
-                    <img src={require('../assets/start-img.png')} alt=""/>
+                    <div>
+                        <img src={require('../assets/start-img.png')} alt=""/>
+                    </div>
                     <div>
                         <h3>How to start saving with us in 3 steps</h3>
                         <div className="steps">

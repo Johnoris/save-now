@@ -9,11 +9,18 @@
     .top-section{
         margin-bottom: -80px;
         padding-top: 118px;
+        display: inline-block;
+        width: 100%;
+        img{
+            max-width: 45%;
+        }
         .top-section_child{
             display: flex;
             padding: 0 100px;
+            align-items: flex-start;
             gap: 29px;
             .text-wrapper{
+                min-width: 519px;
                 h1{
                     font-family: Nunito;
                     font-size: 48px;
@@ -35,6 +42,7 @@
                     color: #362E47;                      
                 }
                 button{
+                    border: none;
                     height: 44px;
                     width: 160px;
                     border-radius: 8px;
@@ -55,6 +63,7 @@
         .about{
             display: flex;
             gap: 16px;
+            justify-content: center;
             height: 152px;
             width: 993px;
             border-radius: 8px;
@@ -94,43 +103,49 @@
             line-height: 48px;
             text-align: left;
         }
-        .invest-card{
-            padding: 32px;
-            .card-img{
-                margin-bottom: 16px;
-            }
-            h4{
-                font-family: Nunito;
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 48px;
-                text-align: left;
-                color: #362E47;
-                margin-bottom: 11px;
-            }
-            p{
-                font-family: Nunito;
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 27px;
-                text-align: left;
-                color: #4E4E4E;
-                margin-bottom: 13px;
-            }
-            button{
-                background-color: transparent;
-                border: none;
-                max-width: fit-content;
-                max-height: fit-content;
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                font-family: Nunito;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 24px;
-                text-align: left;
-                color: #183F8B;
+        .invest-card-wrapper{
+            display: flex;
+            gap: 40px;
+            .invest-card{
+                padding: 32px;
+                width: 365px;
+                background-color: #ffffff;
+                .card-img{
+                    margin-bottom: 16px;
+                }
+                h4{
+                    font-family: Nunito;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    text-align: left;
+                    color: #362E47;
+                    margin-bottom: 11px;
+                }
+                p{
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: left;
+                    color: #4E4E4E;
+                    margin-bottom: 13px;
+                }
+                button{
+                    background-color: transparent;
+                    border: none;
+                    max-width: fit-content;
+                    max-height: fit-content;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-family: Nunito;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-align: left;
+                    color: #183F8B;
+                }
             }
         }
     }
@@ -187,6 +202,7 @@
         margin-bottom: 100px;
         .how-to{
             display: flex;
+            justify-content: center;
             gap: 80px;
             margin-bottom: 208px;
             h3{
@@ -221,7 +237,7 @@
                 }
                 .no{
                     background-color: #183F8B;
-                    width: 40px;
+                    min-width: 40px;
                     height: 40px;
                     border-radius: 50%;
                     display: flex;
@@ -268,6 +284,7 @@
                 height: 44px;
                 width: 160px;
                 border-radius: 8px;
+                border: none;
                 background-color: #183F8B;
                 font-family: Nunito;
                 font-size: 18px;
@@ -328,7 +345,6 @@
             justify-content: center;
             margin-top: 40px;
             .customer-card{
-                height: 269px;
                 width: 550px;
                 border-radius: 8px;
                 padding: 32px;
@@ -363,6 +379,316 @@
                     gap: 41px;
                     align-items: center;
                     margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1383px) {
+    .home {
+        .about-us{
+            flex-direction: column;
+            h2{
+                max-width: 100%;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+        }
+        .start{
+            padding: 100px 50px;
+        }
+    }
+}
+@media (max-width: 1275px) {
+    .home {
+        .invest{
+            justify-content: space-between;
+            h3{
+                text-align: center;
+            }
+            .invest-card-wrapper{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+@media (max-width:1250px) {
+    .home{
+        .top-section{
+            .about{
+                width: auto;
+                max-width: 60%;
+                padding: 20px;
+                height: auto;
+                h3{
+                    font-size: 23px;
+                }
+            }
+        }
+        .customers .customer-card-wrapper{
+            gap: 2%;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .home{
+        .start{
+            .how-to{
+                gap: 40px;
+            }
+        }
+        .customers .customer-card-wrapper{
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}
+@media (min-width: 1177px) {
+    .home{ 
+        .top-section .top-section_child .text-wrapper{
+            min-width: 519px;
+        }
+    }
+}
+@media (max-width: 1177px) {
+    .home{
+        .start{
+            img{
+                max-width: 100%;
+            }
+             .how-to{
+                flex-direction: column;
+                align-items: center;
+            }
+            .investment-plan{
+                flex-direction: column-reverse;
+                align-items: center;
+                .investment-plan-text{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1140px) {
+    .home .top-section .top-section_child{
+        padding: 0 40px;
+    }
+}
+@media (max-width: 1057px) {
+    .home{
+        .top-section{
+            padding-top: 30px;
+            .top-section_child{
+                flex-direction: column-reverse;
+                align-items: center;
+                .text-wrapper{
+                    max-width: 550px;
+                    min-width: 0;
+                }
+                img{
+                    max-width: 65%;
+                }
+            }
+        }
+        .about-us{
+            padding: 100px 50px;
+            .about-card-wrapper{
+                gap: 20px;
+                justify-content: center;
+            }
+            h2{
+                font-weight: 500;
+            }
+        }
+    }
+}
+@media (max-width:928px) {
+    .home .top-section .about{
+        max-width: 80%;
+    }
+    .home .start .investment-plan .investment-plan-text{
+        max-width: 90%;
+    }
+}
+@media (max-width: 840px) {
+    .home {
+        .invest{
+            padding: 40px;
+            padding-top: 120px;
+            background-image: url('../../assets/sm-invest-bg.png');
+            background-position: left center;
+            flex-direction: column;
+            .invest-card-wrapper{
+                margin-top: 20px;
+            }
+        }
+        .about-us{
+            h2{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 696px) {
+    .home {
+        .top-section .about{
+            h3{
+                font-size: 18px;
+            }
+            h3:not(:first-child){
+                padding-left: 20px;
+            }
+        }
+        .download h2{
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+}
+@media (max-width: 650px) {
+    .home{
+        .top-section{
+            .top-section_child{
+                .text-wrapper{
+                    h1{
+                        font-size: 38px;
+                        line-height: 52px;
+                    }
+                }
+            }
+        }
+        .customers .customer-card-wrapper .customer-card{
+            max-width: 90%;
+        }
+    }
+}
+@media (max-width: 537px) {
+    .home .top-section .about{
+        padding: 10px;
+        h3{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        h3:not(:first-child){
+            padding-left: 10px;
+        }
+    }
+    .home .start {
+        padding: 100px 20px;
+        .how-to{
+            .steps{
+                gap: 30px;
+            }
+            h3{
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        .investment-plan{
+            .investment-plan-text{
+                h3{
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .home{
+        .top-section{
+            .top-section_child{
+                padding: 20px;
+                .text-wrapper{
+                    h1{
+                        font-size: 30px;
+                        line-height: 42px;
+                    }
+                    h4{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+        .invest{
+            padding: 20px;
+            padding-top: 120px;
+            h3{
+                font-size: 28px;
+                line-height: 38px;
+            }
+            .invest-card-wrapper{
+                .invest-card{
+                    max-width: 100%;
+                }
+            }
+        }
+        .about-us{
+            padding: 100px 20px;
+        }
+        .download h2{
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+}
+@media (max-width: 421px) {
+    .home .top-section .about{
+        max-width: 87%;
+        padding: 10px;
+        h3{
+            font-size: 12px;
+        }
+        h3:not(:first-child){
+            padding-left: 5px;
+        }
+    }
+    .home .start .how-to .steps{
+        gap: 13px;
+    }
+    .home .customers .customer-card-wrapper .customer-card {
+        padding: 20px;
+        .customer-card-top{
+            gap: 20px;
+        }
+    }
+}
+@media (max-width: 358px) {
+    .home{
+        .top-section{
+            .top-section_child{
+                .text-wrapper{
+                    h1{
+                        font-size: 26px;
+                        line-height: 38px;
+                    }
+                    h4{
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+        .customers .customer-card-wrapper .customer-card {
+            .customer-card-top{
+                gap: 10px;
+                h4{
+                    white-space: nowrap;
                 }
             }
         }
