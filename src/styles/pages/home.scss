@@ -606,6 +606,7 @@
 @media (max-width: 500px) {
     .home{
         .top-section{
+            padding-top: 10px;
             .top-section_child{
                 padding: 20px;
                 .text-wrapper{
@@ -700,9 +701,6 @@
                         font-size: 20px;
                         line-height: 30px;
                     }
-                }
-                img{
-                    max-width: 80%;
                 }
             }
         }
