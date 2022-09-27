@@ -619,13 +619,14 @@
                     }
                 }
                 img{
-                    max-width: 80%;
+                    max-width: 100%;
                 }
             }
         }
         .invest{
             padding: 20px;
             padding-top: 120px;
+            margin-bottom: 40px;
             h3{
                 font-size: 28px;
                 line-height: 38px;
@@ -638,6 +639,17 @@
         }
         .about-us{
             padding: 100px 20px;
+            margin-bottom: 40px;
+        }
+        .start{
+            margin-bottom: 40px;
+        }
+        .download{
+            margin-bottom: 40px;
+        }
+        .customers{
+            padding-top: 20px;
+            margin-bottom: 40px;
         }
         .download h2{
             font-size: 26px;
