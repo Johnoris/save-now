@@ -638,11 +638,12 @@
             }
         }
         .about-us{
-            padding: 100px 20px;
+            padding: 40px 20px;
             margin-bottom: 40px;
         }
         .start{
             margin-bottom: 40px;
+            padding: 40px 20px;
         }
         .download{
             margin-bottom: 40px;
@@ -671,10 +672,15 @@
     .home .start .how-to .steps{
         gap: 13px;
     }
-    .home .customers .customer-card-wrapper .customer-card {
-        padding: 20px;
-        .customer-card-top{
-            gap: 20px;
+    .home .customers{
+        .customer-card-wrapper .customer-card {
+            padding: 20px;
+            .customer-card-top{
+                gap: 20px;
+            }
+        }
+        h3{
+            font-size: 30px;
         }
     }
 }
