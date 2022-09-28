@@ -67,7 +67,8 @@ nav{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin-left: 47px;
+        opacity: 1;
+        transition: opacity 0.5 ease-in-out;
         ul{
             list-style-type: none;
             display: none;

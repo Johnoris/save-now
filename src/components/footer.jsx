@@ -13,7 +13,7 @@ const Footer = () => {
                     <p>Savings</p>
                     <p>Investment</p>
                 </div>
-                <div lassName='company'>
+                <div className='company'>
                     <h3>Company</h3>
                     <p>About us</p>
                     <p>Careers</p>
