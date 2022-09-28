@@ -121,6 +121,11 @@ nav{
         }
     }
 }
+@media (max-width: 1300px) {
+    nav .nav-wrapper{
+        padding-top: 40px;
+    }
+}
 @media (max-width: 1140px) {
     nav .nav-wrapper{
         padding: 40px;
